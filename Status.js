@@ -45,10 +45,10 @@ export default class Status extends React.Component {
         )
 
         const messageContainer = (
-            <View style={styles.messageContainer}>
+            <View style={styles.messageContainer} pointerEvents="none">
                 {statusBar}
                 {!isConnected && (
-                    <View style={styles.bubble} pointerEvents={'none'}>
+                    <View style={styles.bubble}>
                         <Text style={styles.text}>No network connection</Text>
                     </View>
                 )}
